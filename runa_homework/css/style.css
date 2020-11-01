@@ -1,0 +1,91 @@
+label {
+    display: block;
+    margin: 0 0 4px 0;
+    padding : 15px;
+    line-height: 1;
+    color :#fff;
+    background : green;
+    cursor :pointer;
+}
+input {
+    display: none;
+}
+.menu li {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#type1:checked ~ #links1 li,
+#type2:checked ~ #links2 li {
+    height: 54px;
+    opacity: 1;
+}
+
+h1{
+  font-size: 50px;
+  color: #002060;
+  margin-left: 20px;
+  clear: left;
+
+}
+li{
+  font-size: 20px;
+
+}
+@keyframes fadeIn { /*animetion-nameで設定した値を書く*/
+
+  0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+
+  100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+
+}
+h2{
+  clear: left;
+  clear: right;
+  margin-left: 60px;
+}
+a{
+  clear: left;
+}
+/*--------------------全体にかかるスタイルシート--------*/
+.text_section img{
+  width: 25%;
+  animation: fadeIn 2s linear 0.3s 1 normal;
+}
+.text_title_detail{
+  font-size: 30px;
+}
+/*--------------------メリットデメリット--------*/
+.detail{
+  font-size: 25px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+/*--------------------アーティスト紹介--------*/
+.introduce_img img{
+  width: 400px;
+  padding: 25px;
+  background-color: white;
+}
+.introduce_img{
+  float: left;
+}
+.text_section_introduce{
+  font-size: 30px;
+  float: left;
+}
+.artest_title{
+  clear: left;
+}
+.artest_text{
+  background-color: #BFBFBF;
+  padding: 8px;
+  border-radius: 30px;
+  color: white;
+  margin-right: 5px;
+}
